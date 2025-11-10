@@ -1,0 +1,25 @@
+/* src/styles/branding.css */
+:root {
+  --company-primary: #0A6EF0;   /* azul principal */
+  --company-accent: #FF6B35;    /* secundario */
+  --company-bg: #FFFFFF;
+  --company-text: #212121;
+}
+
+/* Ejemplos de sobrescritura de clases comunes */
+.sb-header, .gui-header { 
+  background: var(--company-primary) !important;
+  color: var(--company-bg) !important;
+}
+
+/* Botones */
+button, .ui-button {
+  background: var(--company-primary);
+  color: var(--company-bg);
+  border-radius: 6px;
+}
+
+/* Ajuste del panel lateral (ejemplo) */
+.sb-left-panel, .gui-left-panel {
+  background: #f8f9fb;
+}
