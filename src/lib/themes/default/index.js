@@ -53,8 +53,6 @@ const blockColors = {
         tertiary: '#DB6E00',
         quaternary: '#DB6E00'
     },
-    // This is not a new category, but rather for differentiation
-    // between lists and scalar variables.
     data_lists: {
         primary: '#FF661A',
         secondary: '#FF5500',
@@ -67,37 +65,38 @@ const blockColors = {
         tertiary: '#FF3355',
         quaternary: '#FF3355'
     },
+
+    // 🔴 Solo cambia el entorno, no los bloques:
     text: '#FFFFFF',
-    workspace: '#F9F9F9',
-    toolboxHover: '#4C97FF',
-    toolboxSelected: '#E9EEF2',
-    toolboxText: '#575E75',
-    toolbox: '#FFFFFF',
-    flyout: '#F9F9F9',
-    scrollbar: '#CECDCE',
-    scrollbarHover: '#CECDCE',
+    workspace: '#FCEAEA',          // Fondo suave con toque rojo claro
+    toolboxHover: '#FF3333',       // Hover rojo
+    toolboxSelected: '#FF6666',    // Selección roja clara
+    toolboxText: '#660000',        // Texto rojo oscuro
+    toolbox: '#FFE5E5',            // Fondo del toolbox
+    flyout: '#FFF0F0',             // Fondo de flyout
+    scrollbar: '#CC0000',
+    scrollbarHover: '#FF0000',
     textField: '#FFFFFF',
-    textFieldText: '#575E75',
-    insertionMarker: '#000000',
-    insertionMarkerOpacity: 0.2,
+    textFieldText: '#660000',
+    insertionMarker: '#FF0000',
+    insertionMarkerOpacity: 0.25,
     dragShadowOpacity: 0.6,
-    stackGlow: '#FFF200',
+    stackGlow: '#FF3333',
     stackGlowSize: 4,
     stackGlowOpacity: 1,
-    replacementGlow: '#FFFFFF',
+    replacementGlow: '#FF9999',
     replacementGlowSize: 2,
     replacementGlowOpacity: 1,
-    colourPickerStroke: '#FFFFFF',
-    // CSS colours: support RGBA
-    fieldShadow: 'rgba(255, 255, 255, 0.3)',
-    dropDownShadow: 'rgba(0, 0, 0, .3)',
-    numPadBackground: '#547AB2',
-    numPadBorder: '#435F91',
-    numPadActiveBackground: '#435F91',
-    numPadText: 'white', // Do not use hex here, it cannot be inlined with data-uri SVG
+    colourPickerStroke: '#FF0000',
+    fieldShadow: 'rgba(255, 0, 0, 0.2)',
+    dropDownShadow: 'rgba(255, 0, 0, .3)',
+    numPadBackground: '#660000',
+    numPadBorder: '#990000',
+    numPadActiveBackground: '#CC0000',
+    numPadText: 'white',
     valueReportBackground: '#FFFFFF',
-    valueReportBorder: '#AAAAAA',
-    menuHover: 'rgba(0, 0, 0, 0.2)'
+    valueReportBorder: '#FF9999',
+    menuHover: 'rgba(255, 0, 0, 0.15)'
 };
 
 export {
