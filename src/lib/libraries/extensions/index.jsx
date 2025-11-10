@@ -1,4 +1,7 @@
 import React from 'react';
+
+
+
 import {FormattedMessage} from 'react-intl';
 
 import musicIconURL from './music/music.png';
@@ -318,4 +321,9 @@ export default [
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
     }
+    
+    
+
+
+
 ];

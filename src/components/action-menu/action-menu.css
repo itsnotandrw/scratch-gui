@@ -64,16 +64,28 @@ $more-button-size: 2.25rem;
 /* ================================
    Contenedor desplegable (más opciones)
    ================================ */
+/* ================================
+   Contenedor desplegable (más opciones)
+   ================================ */
+
 .more-buttons-outer {
+    /*
+        Need to use two divs to set different overflow x/y
+        which is needed to get animation to look right while
+        allowing the tooltips to be visible.
+    */
     overflow-y: hidden;
-    background: darken($looks-secondary-dark, 5%); /* rojo más oscuro */
+
+    background: $looks-secondary-dark;
     border-top-left-radius: $more-button-size;
     border-top-right-radius: $more-button-size;
     width: $more-button-size;
     margin-left: calc(($main-button-size - $more-button-size) / 2);
     margin-right: calc(($main-button-size - $more-button-size) / 2);
+
     position: absolute;
     bottom: calc($main-button-size);
+
     margin-bottom: calc($main-button-size / -2);
     padding-bottom: calc($main-button-size / 2);
 }
@@ -84,18 +96,22 @@ $more-button-size: 2.25rem;
     overflow-x: visible;
     display: flex;
     flex-direction: column;
-    z-index: 10;
+    z-index: 10; /* @todo justify */
 }
 
-.expanded .more-buttons {
-    max-height: 1000px;
-}
-
-.force-hidden .more-buttons {
+.file-input {
     display: none;
 }
 
-.more-buttons:first-child {
+.expanded .more-buttons {
+    max-height: 1000px; /* Arbitrary, needs to be a value in order for animation to run */
+}
+
+.force-hidden .more-buttons {
+    display: none; /* This property does not animate */
+}
+
+.more-buttons:first-child { /* Round off top button */
     border-top-right-radius: $more-button-size;
     border-top-left-radius: $more-button-size;
 }
@@ -103,7 +119,7 @@ $more-button-size: 2.25rem;
 .more-button {
     width: $more-button-size;
     height: $more-button-size;
-    background: $looks-secondary-dark; /* rojo oscuro */
+    background: $looks-secondary-dark;
 }
 
 .more-icon {
@@ -114,6 +130,7 @@ $more-button-size: 2.25rem;
 .coming-soon .more-icon {
     opacity: 0.5;
 }
+
 
 /* ================================
    Tooltips (burbujas de ayuda)
