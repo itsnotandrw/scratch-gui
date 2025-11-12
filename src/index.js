@@ -11,6 +11,7 @@ import {setAppElement} from 'react-modal';
 import {activateDeck} from './reducers/cards.js';
 
 
+
 const guiReducers = {
     locales: LocalesReducer,
     scratchGui: GuiReducer,
