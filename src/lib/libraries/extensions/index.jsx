@@ -1,5 +1,6 @@
 import React from 'react';
 
+import playiot from './playiot';
 
 
 import {FormattedMessage} from 'react-intl';
@@ -320,7 +321,8 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
-    }
+    },
+    playiot,
     
     
 
